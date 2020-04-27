@@ -1,0 +1,12 @@
+Multiple Linear Regression Results
+  I first read in the mechaCar data then generated a multiple linear regression model. I then generated summary statistics to find the p-values. The vehicle length and ground clearance are the least likely variables to provide non-random amount of variance to the mpg values in the dataset. The slope of our model is not considered to be zero. The multiple r-squared is .71, which means that 71% of mpg predictions will be correct, the p-value is also significant. I do not belive that it predicts the mpg of the prototypes effectively because there is not enough significant data. Only two of the five varibale provide a non-random amount of variance. 
+
+Stat Summary 
+  I read in the suspension coil data csv file then changed the VehicleID and Manufacturing Lot data from character to factor (in hindsight this was unnecessary). I then gathered summary stats on the PSI column data and formated into a table, grouped by Manufactoring Lot. "The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per inch." The data from Lot 1 and 2 support this design specification as there is a variance of .98 for Lot 1 and 7.45 for Lot 2. Lot 3 exceeds this specification as the variance is 170.29. 
+
+T-Test Results
+  I took a random sample of 50 data points from the population data (or suspensioncoil_data) and performed a one sample t-test to compare the means of the sample and population data. The p-value was .91 (rounded to the nearest hundreth). This was above the significance level of .05, therefore we do not have sufficient evidence to reject a null hypothesis. This means that the two means are statistically similar.
+  
+Own Study
+  I believe the average consumer today considers the following while chosing a car: upgrade package options, hybrid option, cost, color, size, quality of backup camera and bluetooth. 
+  For the study, I will focus on quality of backup camera and bluetooth. Our Null Hypothesis is that there is no significant difference between the mechaCar data and sample data, any difference is by random chance.The Alternative Hypothesis that the difference is by non-random events. We would use a one sample t-test and collect dichotomous and continuous data.  
